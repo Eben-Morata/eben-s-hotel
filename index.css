@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+
+  .carousel-h1{
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+  }
+  
+  .navbar .brand {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff9800;
+  }
+
+
+  /* Popular rooms */
+  .header {
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+  .rooms-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .room-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .room-details {
+    padding: 20px;
+  }
+  
+  .room-details h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .room-details .price {
+    font-weight: bold;
+    color: #e67e22;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1a242f;
+  }
+  
+  /* Responsive toggle button */
+  .toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle-button {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover;
+  }
+  
+  .carousel-images img.active {
+    display: block;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+
+  .footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 908px){
+    .carousel-h1{
+        font-size: 40px;
+    }
+  }
+  @media (max-width: 708px){
+    .carousel-h1{
+        font-size: 30px;
+    }
+  }

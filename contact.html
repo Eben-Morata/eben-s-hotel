@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Eben's Hotel</title>
+  <link rel="stylesheet" href="./contact.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">Eben's Hotel</div>
+        <button class="toggle-button" id="nav-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    
+
+  <header class="header">
+    <h1>Contact Us</h1>
+    <p>We're here to assist you 24/7</p>
+  </header>
+
+  <main class="contact-container">
+
+    <section class="contact-info">
+      <h2>Hotel Information</h2>
+      <p><strong>Address:</strong> Ghana, Country</p>
+      <p><strong>Phone:</strong> +233 556408910</p>
+      <p><strong>Email:</strong> ebenmorata77@gmail.com</p>
+      <p><strong>Check-in:</strong> 2:00 PM | <strong>Check-out:</strong> 11:00 AM</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Eben's Hotel. All rights reserved.</p>
+  </footer>
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
